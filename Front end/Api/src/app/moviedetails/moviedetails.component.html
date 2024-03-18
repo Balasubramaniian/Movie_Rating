@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row" style="background-image: linear-gradient(to right, rgb(32, 32, 53) calc(-510px + 50vw), rgba(32, 32, 53, 0.84) 50%, rgba(32, 32, 53, 0.84) 100%),
+     url({{moviedata.image}});
+      height: 340px; overflow: hidden; background-repeat: no-repeat;">
+      <div class="col-3 mt-2">
+        <span>
+          <img src="{{moviedata.images}}" alt="{{moviedata.movieName}}" width="200px" height="300px">
+        </span>
+      </div>
+      <div class="col-6 mt-5">
+        <h2 class="fw-bold">{{moviedata.movieName}}</h2>
+        
+        <button class="btn btn-info text-white fw-bold" (click)="rating(moviedata)">RATE NOW</button>
+        <span class="p-3 h4">{{moviedata.rating}}/10</span>
+      </div>
+</div>
+</div>
+<div class="container mt-5">
+  <p class="h1">See Also</p>
+    <div class="row" >
+      <div class="col-3" *ngFor="let movie of allmovies">
+        <div  style="width: 230px" >
+          <a  class="text-decoration-none">
+            <img class="card-img-top" src={{movie.images}} alt="Card image" style="width:100%">
+              <div class="card-body mt-3">
+                <h4 class="card-title text-white fw-bold text-center ff">{{movie.movieName}}</h4>
+                
+              </div></a>
+            </div>
+      </div>
+</div>
