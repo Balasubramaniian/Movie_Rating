@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <form class="form-group bg-dark p-5">
+        <h1 class="text-center text-white">Login</h1>
+        <label for="username" class="form-label text-white">UserName: </label>
+        <input type="text" class="form-control" id="username" name="Username" placeholder="Enter the Username" [(ngModel)]="login.username">
+        <label for="Password" class="form-label text-white">Password: </label>
+        <input type="text" class="form-control" id="Password" name="Password" placeholder="Enter the Password" [(ngModel)]="login.password">
+         <button class="btn btn-primary mt-3" (click)="Onsubmit()">Login</button>
+    </form>
+</div>
