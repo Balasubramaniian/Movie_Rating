@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <form>
+        <div class="form-group bg-dark p-5">
+            <fieldset class="width:200px">
+                <h1 class="text-center text-white">SignUp</h1>
+                <label for="Username" class="form-label text-white">Username:</label>
+                <input type="text" id="Username" name="Username" class="form-control" placeholder="Enter the Username" [(ngModel)]="username">
+                <label for="Password" class="form-label text-white">Password:</label>
+                <input type="password" id="Password" name="Password" class="form-control" placeholder="Enter the Password" [(ngModel)]="password">
+                <label for="ConPassword" class="form-label text-white">Confirm-Password:</label>
+                <input type="password" id="ConPassword" name="ConPassword" class="form-control" placeholder="Enter the Confirm Password" [(ngModel)]="conpassword">
+                    <button class="btn btn-primary mt-3 text-center" (click)="OnSubmit()">SignUp</button>
+            </fieldset>
+        </div> 
+    </form>
+</div>
