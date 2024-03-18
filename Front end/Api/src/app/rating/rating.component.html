@@ -1,0 +1,14 @@
+<div class="container">
+    <form>
+       <div class="form-group">
+        <fieldset class="width:200px">
+            <h1 class="text-center text-white">Rating</h1>
+            <label for="rating" class="form-label text-white">Rating:</label>
+            <input type="Number" id="rating" name="rating" min="0" max="10" class="form-control" placeholder="Enter the Rating" [(ngModel)]="rating">
+            <label class="form-label text-white mt-2">Comments:</label>
+            <textarea class="form-control" cols="50" rows="10" placeholder="Enter the Comments"></textarea>
+            <button class="btn btn-primary mt-3" (click)="RateNow()">Rate</button>
+        </fieldset>
+        </div>
+    </form>
+</div>
