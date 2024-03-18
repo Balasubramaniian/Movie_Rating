@@ -1,0 +1,14 @@
+<div class="container-sm mt-3">
+  <h4 class="text-dark fw-bolder">Recommended Movies</h4>
+    <div class="row" >
+        <div class="col-3" *ngFor="let movie of movies">
+          <div  style="width: 230px" >
+            <a  class="text-decoration-none" (click)="getMoviedetails(movie)">
+              <img class="card-img-top" src={{movie.images}} alt="Card image" style="width:100%">
+                <div class="card-body mt-3">
+                  <h4 class="card-title text-white fw-bold text-center ff">{{movie.movieName}}</h4>
+                </div></a>
+              </div>
+        </div>
+</div>
+
